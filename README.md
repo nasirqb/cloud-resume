@@ -9,13 +9,17 @@ Nasir Powell's AWS cloud resume website, documenting a hands-on journey in cloud
 - Created an initial static resume website using HTML.
 - Added the professional website title: `Nasir Powell | AWS Cloud Resume`.
 - Published the source code to GitHub in the `cloud-resume` repository.
+- Created an Amazon S3 bucket and enabled static website hosting.
+- Uploaded the resume website and configured public read access for website files.
+- Published the first live version at http://nasir-powell-cloud-resume.s3-website-us-east-1.amazonaws.com.
 
 ### Next step
 
-- Create an Amazon S3 bucket and configure it to host the website.
+- Add HTTPS and a custom domain with Amazon CloudFront and Route 53.
+- Automate future deployments from GitHub to AWS.
 
 ## Current technology
 
 - HTML
 - Git and GitHub
-- AWS (hosting setup in progress)
+- Amazon S3 static website hosting
