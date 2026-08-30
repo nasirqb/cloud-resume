@@ -17,7 +17,12 @@ Nasir Powell's AWS cloud resume website, documenting a hands-on journey in cloud
 ### Next step
 
 - Add HTTPS and a custom domain with Amazon CloudFront and Route 53.
-- Automate future deployments from GitHub to AWS.
+
+## Automatic deployments
+
+The GitHub Actions workflow in `.github/workflows/deploy-to-s3.yml` deploys the website to Amazon S3 whenever changes are pushed to the `main` branch. It uses GitHub OpenID Connect (OIDC), which provides temporary AWS access without storing an AWS access key in GitHub.
+
+Before the workflow can run, configure the `AWS_DEPLOY_ROLE_ARN` GitHub Actions secret with the ARN of an AWS IAM role that is limited to deploying this website bucket.
 
 ## Current technology
 
