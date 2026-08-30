@@ -12,6 +12,7 @@ Nasir Powell's AWS cloud resume website, documenting a hands-on journey in cloud
 - Created an Amazon S3 bucket and enabled static website hosting.
 - Uploaded the resume website and configured public read access for website files.
 - Published the first live version at http://nasir-powell-cloud-resume.s3-website-us-east-1.amazonaws.com.
+- Completed guided training on multi-tier Amazon VPC subnet design, including VPC and subnet configuration.
 
 ### Next step
 
@@ -23,3 +24,4 @@ Nasir Powell's AWS cloud resume website, documenting a hands-on journey in cloud
 - HTML
 - Git and GitHub
 - Amazon S3 static website hosting
+- Amazon VPC and subnet design (guided training)
