@@ -21,6 +21,17 @@ jobs:
       - name: Check out the website
         uses: actions/checkout@v4
 
+      - name: Verify GitHub deployment identity
+        run: |
+          response="$(curl --silent --show-error --fail \
+            --header "Authorization: bearer ${ACTIONS_ID_TOKEN_REQUEST_TOKEN}" \
+            "${ACTIONS_ID_TOKEN_REQUEST_URL}&audience=sts.amazonaws.com")"
+          token="$(printf '%s' "$response" | jq --raw-output '.value')"
+          payload="$(printf '%s' "$token" | cut --delimiter='.' --fields=2 | tr '_-' '/+')"
+          padding=$(( (4 - ${#payload} % 4) % 4 ))
+          payload="${payload}$(printf '=%.0s' $(seq 1 "$padding"))"
+          printf '%s' "$payload" | base64 --decode | jq '{sub, aud, repository, ref, repository_owner}'
+
       - name: Connect to AWS securely
         uses: aws-actions/configure-aws-credentials@v5
         with:
