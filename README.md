@@ -13,6 +13,7 @@ Nasir Powell's AWS cloud resume website, documenting a hands-on journey in cloud
 - Uploaded the resume website and configured public read access for website files.
 - Published the first live version at http://nasir-powell-cloud-resume.s3-website-us-east-1.amazonaws.com.
 - Completed guided training on multi-tier Amazon VPC subnet design, including VPC and subnet configuration.
+- Configured GitHub Actions with AWS IAM OpenID Connect (OIDC) to automatically deploy website updates to Amazon S3.
 
 ### Next step
 
