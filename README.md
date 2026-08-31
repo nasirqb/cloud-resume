@@ -12,7 +12,7 @@ Nasir Powell's AWS cloud resume website, documenting a hands-on journey in cloud
 - Created an Amazon S3 bucket and enabled static website hosting.
 - Uploaded the resume website and configured public read access for website files.
 - Published the first live version at http://nasir-powell-cloud-resume.s3-website-us-east-1.amazonaws.com.
-- Completed guided training on multi-tier Amazon VPC subnet design, including VPC and subnet configuration.
+- Completed guided training configuring a multi-tier Amazon VPC with public subnets, route tables, internet and NAT gateways, security groups, network ACLs, and a jump host.
 - Configured GitHub Actions with AWS IAM OpenID Connect (OIDC) to automatically deploy website updates to Amazon S3.
 
 ### Next step
@@ -30,4 +30,4 @@ Before the workflow can run, configure the `AWS_DEPLOY_ROLE_ARN` GitHub Actions 
 - HTML
 - Git and GitHub
 - Amazon S3 static website hosting
-- Amazon VPC and subnet design (guided training)
+- Amazon VPC networking: public subnets, route tables, internet and NAT gateways, security groups, network ACLs, and jump hosts (guided training)
