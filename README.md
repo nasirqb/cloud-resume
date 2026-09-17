@@ -17,6 +17,7 @@ Nasir Powell's AWS cloud resume website, documenting a hands-on journey in cloud
 - Completed guided training on EC2 storage and network architecture, including EBS volume types, instance store volumes, DNS, and a manual WordPress installation.
 - Configured AWS Certificate Manager DNS validation for the Rich Rome Apparel domain, including `richinrome.com` and `www.richinrome.com`, in preparation for CloudFront HTTPS hosting.
 - Configured GitHub Actions with AWS IAM OpenID Connect (OIDC) to automatically deploy website updates to Amazon S3.
+- Built and verified a separate GitHub Actions deployment pipeline for the Rich Rome Apparel website using AWS IAM OIDC and a private Amazon S3 bucket.
 
 ### Next step
 
@@ -37,3 +38,4 @@ Before the workflow can run, configure the `AWS_DEPLOY_ROLE_ARN` GitHub Actions 
 - Amazon EC2 access methods and instance types (guided learning)
 - Amazon EC2 storage, networking, DNS, and manual WordPress installation (guided training)
 - AWS Certificate Manager DNS validation for a custom domain (Rich Rome Apparel project)
+- GitHub Actions, AWS IAM OIDC, and Amazon S3 automated deployment (Rich Rome Apparel project)
