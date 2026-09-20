@@ -19,10 +19,13 @@ Nasir Powell's AWS cloud resume website, documenting a hands-on journey in cloud
 - Configured AWS Certificate Manager DNS validation for the Rich Rome Apparel domain, including `richinrome.com` and `www.richinrome.com`, in preparation for CloudFront HTTPS hosting.
 - Configured GitHub Actions with AWS IAM OpenID Connect (OIDC) to automatically deploy website updates to Amazon S3.
 - Built and verified a separate GitHub Actions deployment pipeline for the Rich Rome Apparel website using AWS IAM OIDC and a private Amazon S3 bucket.
+- Configured `nasirpowell.dev` and `www.nasirpowell.dev` in Amazon Route 53 to route to a CloudFront distribution.
+- Configured an AWS Certificate Manager certificate with DNS validation for both resume domains and enabled HTTPS through Amazon CloudFront.
+- Added CloudFront origin access to keep the resume's S3 bucket private while serving the site securely.
 
 ### Next step
 
-- Add HTTPS and a custom domain with Amazon CloudFront and Route 53.
+- Continue hands-on AWS CloudFormation learning for repeatable infrastructure deployments.
 
 ## Automatic deployments
 
@@ -40,4 +43,6 @@ Before the workflow can run, configure the `AWS_DEPLOY_ROLE_ARN` GitHub Actions 
 - Amazon EC2 storage, networking, DNS, and manual WordPress installation (guided training)
 - Amazon EC2 AMIs, instance launches, and purchasing options (guided training)
 - AWS Certificate Manager DNS validation for a custom domain (Rich Rome Apparel project)
+- Amazon CloudFront HTTPS delivery with Amazon Route 53 custom-domain routing (cloud resume)
+- AWS CloudFormation (learning in progress)
 - GitHub Actions, AWS IAM OIDC, and Amazon S3 automated deployment (Rich Rome Apparel project)
