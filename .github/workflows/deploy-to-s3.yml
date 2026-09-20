@@ -13,6 +13,7 @@ permissions:
 env:
   AWS_REGION: us-east-1
   BUCKET_NAME: nasir-powell-cloud-resume
+  CLOUDFRONT_DISTRIBUTION_ID: E33OEK5728LLUJ
 
 jobs:
   deploy:
@@ -34,3 +35,6 @@ jobs:
             --exclude ".github/*" \
             --exclude ".gitignore" \
             --exclude "README.md"
+
+      - name: Refresh the CloudFront cache
+        run: aws cloudfront create-invalidation --distribution-id "$CLOUDFRONT_DISTRIBUTION_ID" --paths "/*"
